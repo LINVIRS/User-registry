@@ -1,0 +1,18 @@
+#项目服务器配置
+
+spring:
+    datasource:
+        druid:
+            url: jdbc:mysql://1.15.226.11:3306/class-test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+            username: class-test
+            password: wl123...
+    redis:
+        host: 1.15.226.11
+        password: wl123...
+        jedis:
+          pool:
+            min-idle: 0
+            max-idle: 20
+#            max-wait: 5000
+            max-active: 100
+        port: 6379
